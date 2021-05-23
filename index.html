@@ -40,7 +40,10 @@ font-style: italic;
 
 <link rel="stylesheet" href="./style.css" />
 
+
+
 </head>
+
 
 <body class="bgbody">
 
@@ -80,6 +83,10 @@ The most common way to add CSS, is to keep the styles in external CSS files. How
 	<span class="headhtml" id="headerid">Hypertext Markup Language</span>
 	<div >kjds wkew dskdsj</div>
 </div>
+
+
+
+
 
 <div>kjds wkew dskdsj dwdwew</div>
 <p>jkjkjjf</p>
@@ -132,10 +139,10 @@ Mobile :<input value="7854589658" type="number" /><br/>
 Address :<textarea>Jaipur</textarea><br/>
 Optional : 
 <br/>
-<input type="radio" name="rdo1"/>A<br/>
-<input type="radio" name="rdo1"/>B<br/>
-<input type="radio" name="rdo2"/>C<br/>
-<input type="radio" name="rdo2"/>D<br/>
+<input type="radio" id="rdo" name="rdo1"/>A<br/>
+<input type="radio" id="rdo" name="rdo1"/>B<br/>
+<input type="radio" id="rdo" name="rdo2"/>C<br/>
+<input type="radio" id="rdo" name="rdo2"/>D<br/>
 
 
 Checkbox : <br/>
@@ -168,7 +175,55 @@ Open in another tab - W3School
 
 </form>
 
-<iframe src="http://itembaba.com" />
+<p id="callbyjavascript"></p>
 
+<!-- Comment -->
+<!--<iframe src="http://itembaba.com" />-->
+<script type="text/javascript">
+
+//var, let, const
+//obj = variable
+//Object - Key,Values, define - {}
+//key=name,age,job
+//value=Sohan,30, Dveloper
+var obj={"name":"Sohan","age":30,"job":"Developer"};
+console.log("Name of Person=",obj.name,obj.age, obj.job);
+
+//Array
+//Array start with 0 index
+//Array contain string, object, intiger, array
+var arry=["Sohan","Mohan","Shyam","Ram"]
+//         0 ,     1,    , 2     , 3
+console.log("Get Data=",arry[0],",",arry[2]);
+
+var arry_object1123=[{"name":"Sohan","age":30,"job":"Developer"},{"name":"Mohan","age":29,"job":"Developer"},
+{"name":"Shyam","age":28,"job":"Developer"},
+{"name":"Ram","age":30,"job":"Developer"}]
+
+console.log("Get Array object=",arry_object1123[0],arry_object1123[0]["name"]);
+console.log("Get Array object Shyam age=",arry_object1123[2]["age"]);
+
+
+var array_intiger=[1,2,3,-1,-2];
+console.log("Intiger Value--->>",array_intiger[4],array_intiger[5]);
+
+var array_array=[
+[1,2,3,4],
+["a","b","c","d","e"],
+[{"name":"Ram1","age":31,"job":"Developer"},{"name":"Ram2","age":30,"job":"Developer"}],
+"Sohan",
+12];
+console.log("Array Array Many--2->>",array_array[0][1])
+console.log("Array Array Many-c-->>",array_array[1][2])
+console.log("Array Array Many-Ram2 age-->>",array_array[2][1]["age"])
+console.log("Array Array Many-Sohan-->>",array_array[3])
+console.log("Array Array Many-12-->>",array_array[4])
+
+
+//alert("Hello Welcome");
+//https://www.w3schools.com/js/js_htmldom_document.asp
+document.getElementById("callbyjavascript").innerHTML="MY NAME IS SOHAN";
+</script>
 </body>
+
 </html>
