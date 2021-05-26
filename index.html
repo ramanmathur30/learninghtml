@@ -176,6 +176,11 @@ Open in another tab - W3School
 </form>
 
 <p id="callbyjavascriptId">innerHTML dfkwlkflew</p>
+<p class="callCls">innerHTML dfkwlkflew</p>
+<p class="callCls">innerHTML eexzzsscc</p>
+<p class="callCls">innerHTML eexzzsscc</p>
+<p class="callCls">innerHTML eexzzsscc</p>
+<p class="callCls">innerHTML eexzzsscc</p>
 
 <!-- Comment -->
 <!--<iframe src="http://itembaba.com" />-->
@@ -223,9 +228,30 @@ console.log("Array Array Many-12-->>",array_array[4])
 //alert("Hello Welcome");
 //https://www.w3schools.com/js/js_htmldom_document.asp
 //document object = Complete web HTML
-//document.getElementById("callbyjavascript").innerHTML="MY NAME IS SOHAN";
-console.log("document--->>",document)
+//document.getElementById("callbyjavascriptId").innerHTML="MY NAME IS SOHAN";
+
+//document.getElementsByClassName("callCls")[0].innerHTML="MY NAME IS Shyam";
+//document.getElementsByClassName("callCls")[1].innerHTML="MY NAME IS Ram";
+//document.getElementsByClassName("callCls")[2].innerHTML="MY NAME IS Ram2";
+
+console.log("document--->>",document.getElementById("callbyjavascriptId"),document.getElementsByClassName("callCls"))
 //The property name or any name which cannot be changed is called case sensitive
+
+//loop=for
+
+//For Loop
+var arrCls=["MY NAME IS A","MY NAME IS B","C","D","E"];
+console.log("arrCls.length--->>>",arrCls.length)
+for(var k=0;k<arrCls.length;k++){
+	document.getElementsByClassName("callCls")[k].innerHTML=arrCls[k];
+}
+var a=3;
+var b=6;
+var c=5;
+console.log("condition",a==a,a==b);
+console.log("assign,a,b",a,b);
+console.log("assign",a=c,c=b);
+console.log("condition","<=",">=","==","!=");
  
 </script>
 </body>
