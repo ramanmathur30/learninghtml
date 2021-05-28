@@ -1,0 +1,140 @@
+<html>
+
+<head>
+<meta></meta>
+
+<title>
+Title Test
+</title>
+
+</head>
+
+
+<body class="bgbody">
+
+<h3>Learning Javascript</h3>
+
+<p id="callbyjavascriptId">innerHTML dfkwlkflew</p>
+<p class="callCls">innerHTML dfkwlkflew</p>
+<p class="callCls">innerHTML eexzzsscc</p>
+<p class="callCls">innerHTML eexzzsscc</p>
+<p class="callCls">innerHTML eexzzsscc</p>
+<p class="callCls">innerHTML eexzzsscc</p>
+
+<h3>Student Detail</h3>
+<p class="callStd">dfdsf</p>
+<p class="callStd">fdf eexzzsscc</p>
+<p class="callStd">ewe eexzzsscc</p>
+<p class="callStd">sds eexzzsscc</p>
+<p class="callStd">232 eexzzsscc</p>
+
+<!-- Comment -->
+<!--<iframe src="http://itembaba.com" />-->
+<script type="text/javascript">
+
+//var, let, const
+//obj,arry = variable
+//Object - Key,Values, define - {}
+//key=name,age,job
+//value=Sohan,30, Dveloper
+var obj={"name":"Sohan","age":30,"job":"Developer"};
+var a=1;
+console.log("Name of Person=",obj.name,obj.age, obj.job);
+
+//Array
+//Array start with 0 index
+//Array contain string, object, intiger, array
+var arry=["Sohan","Mohan","Shyam","Ram"]
+//         0 ,     1,    , 2     , 3
+console.log("Get Data=",arry[0],",",arry[2]);
+
+var arry_object1123=[{"name":"Sohan","age":30,"job":"Developer"},{"name":"Mohan","age":29,"job":"Developer"},
+{"name":"Shyam","age":28,"job":"Developer"},
+{"name":"Ram","age":30,"job":"Developer"}]
+
+console.log("Get Array object=",arry_object1123[0],arry_object1123[0]["name"],arry_object1123[0].name);
+console.log("Get Array object Shyam age=",arry_object1123[2]["age"]);
+
+
+var array_intiger=[1,2,3,-1,-2];
+console.log("Intiger Value--->>",array_intiger[4],array_intiger[5]);
+
+var array_array=[
+[1,2,3,4],
+["a","b","c","d","e"],
+[{"name":"Ram1","age":31,"job":"Developer"},{"name":"Ram2","age":30,"job":"Developer"}],
+"Sohan",
+12];
+console.log("Array Array Many--2->>",array_array[0][1])
+console.log("Array Array Many-c-->>",array_array[1][2])
+console.log("Array Array Many-Ram2 age-->>",array_array[2][1]["age"],array_array[2][1].age)
+console.log("Array Array Many-Sohan-->>",array_array[3])
+console.log("Array Array Many-12-->>",array_array[4])
+
+
+//alert("Hello Welcome");
+//https://www.w3schools.com/js/js_htmldom_document.asp
+//document object = Complete web HTML
+//document.getElementById("callbyjavascriptId").innerHTML="MY NAME IS SOHAN";
+
+//document.getElementsByClassName("callCls")[0].innerHTML="MY NAME IS Shyam";
+//document.getElementsByClassName("callCls")[1].innerHTML="MY NAME IS Ram";
+//document.getElementsByClassName("callCls")[2].innerHTML="MY NAME IS Ram2";
+
+console.log("document--->>",document.getElementById("callbyjavascriptId"),document.getElementsByClassName("callCls"))
+//The property name or any name which cannot be changed is called case sensitive
+
+//loop=for, forEach, map
+
+//For Loop
+var arrCls=["MY NAME IS A","MY NAME IS B","C","D","E"];
+console.log("arrCls.length--->>>",arrCls.length)
+for(var k=0;k<arrCls.length;k++){
+	document.getElementsByClassName("callCls")[k].innerHTML=arrCls[k];
+}
+var a=3;
+var b=6;
+var c=5;
+console.log("condition",a==a,a==b);
+console.log("assign,a,b",a,b);
+console.log("assign",a=c,c=b);
+console.log("condition","<=",">=","==","!=");
+
+var x=4,y=4;
+if(x<=y){
+	console.log("---In condition---");
+}else{
+	console.log("---Not in condition---");
+}
+
+var m=4,n=6;
+if(m>=n){
+	console.log("---In condition A");
+}else if(m==n){
+	console.log("---In condition B");
+}else{
+	console.log("---In condition C");
+}
+
+var j=9,k=7;
+if(j!=k){
+	console.log("--j,k-In condition A");	
+}else
+{
+	console.log("-j,k--In condition B");
+}
+
+
+var arrHeaderName=["Name","Age","Class","Address","Parent Name"];
+var arrHeaderValue=["Ram","14","9","Jaipur","Mr. Shyam"];
+
+arrHeaderValue.forEach((item,index)=>{
+	console.log("hjhs---->>>",item,index);
+	document.getElementsByClassName("callStd")[index].innerHTML=arrHeaderName[index] +" : "+ arrHeaderValue[index];
+})
+
+ 
+</script>
+</body>
+
+</html>
