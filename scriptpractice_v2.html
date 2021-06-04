@@ -1,0 +1,58 @@
+
+<html>
+    <body>
+    <p class="clsstd">
+        
+    </p>
+ <p class="clsstd">
+        </p>
+        
+
+<p class="ttrr">
+</p>
+<p class="ttrr">
+</p>
+<p class="ttrr">
+</p>
+<p class="abc">
+    
+</p>
+<p class="abc">
+    
+</p>
+<p class="abc">
+    
+</p>
+<script>
+console.log("ear")
+
+var obj={"name":"ram","age":50,"job":"manager"}
+
+console.log("A=",obj.name,obj.age,obj.job)
+
+var arr_obj=[{"name":"Sonam","age":12},{"name":"rinki","age":13}]
+
+console.log("get array object=",arr_obj[0]["age"])
+
+document.getElementsByClassName("clsstd")[0].innerHTML="name : "+arr_obj[0].name+", "+ "age : "+arr_obj[0].age;
+
+
+
+var arrHead=[{"name":"mahi","age":33,"job":"nurse"},{"name":"sohan","age":22,"job":"doctor"}]
+var arrhea=["ram","shyam"]
+arrHead.forEach((item,index)=>{
+    
+    console.log("aaa--->",item,index);
+
+    document.getElementsByClassName("ttrr")[index].innerHTML="name : "+ arrHead[index].name+", "+"age:"+arrHead[index].age+", "+arrhea[index];
+})
+var arrhea=["name","age","job"]
+var arrdd=["ranm",33,"teacher"]
+arrdd.forEach((item,index)=>{
+    console.log("ssss--->",item,index);
+    document.getElementsByClassName("abc")[index].innerHTML=arrhea[index]+": "+arrdd[index];
+})
+</script>
+
+</body>
+</html>

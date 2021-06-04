@@ -128,7 +128,15 @@ if(j!=k){
 var arrHeaderName=["Name","Age","Class","Address","Parent Name"];
 var arrHeaderValue=["Ram","14","9","Jaipur","Mr. Shyam"];
 
+//Multi Comment
+/*
 arrHeaderValue.forEach((item,index)=>{
+	console.log("hjhs---->>>",item,index);
+	document.getElementsByClassName("callStd")[index].innerHTML=arrHeaderName[index] +" : "+ arrHeaderValue[index];
+})
+*/
+
+arrHeaderValue.map((item,index)=>{
 	console.log("hjhs---->>>",item,index);
 	document.getElementsByClassName("callStd")[index].innerHTML=arrHeaderName[index] +" : "+ arrHeaderValue[index];
 })

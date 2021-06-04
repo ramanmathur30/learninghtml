@@ -1,0 +1,13 @@
+1. html
+2. table
+3. Name, email, password, gender, Education(1. B.Tech 2. MA)
+
+4. detail={
+"name":"Ram",
+"email":"ram@gmail.com",
+"pasword":"123456"
+}
+
+5. button submit - onclick
+6. using function
+7. Javascript
