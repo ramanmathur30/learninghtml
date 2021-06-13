@@ -1,0 +1,55 @@
+<html>
+
+<body>
+
+<table>
+
+<tr><td>Name</td><td><input type="text" id="aa" value="Ram"/></td></tr>
+
+<tr><td>email</td><td><input type="text" id="dd" value="ram@gmail.com" /></td></tr>
+
+<tr><td>Password</td><td><input type="password" id="password" value="123456"  /></td></tr>
+
+<tr><td>Gender</td><td><input type="radio" id="rdo" name="gender"/>male</td></tr>
+
+<tr><td></td><td><input type="radio" id="rdo" name="gender"/>female</td></tr>
+
+<tr><td></td><td><input type="radio" id="rdo" name="gender"/>other</td></tr>
+
+<tr><td>Education</td><td><input type="checkbox" />b.tech</td></tr>
+
+<tr><td></td><td><input type="checkbox" checked="true"/>m.a.</td></tr>
+
+<tr><td>Address</td><td><textarea id="qq">jaipur</textarea></td></tr>
+
+<tr><td></td><td><input type="submit" id="submit" onclick="getData()" /></td></tr>
+
+
+<script>
+
+document.getElementById("aa").value="sharlin";
+function getData(e){
+var detail={
+"name":"Ram1",
+"email":"ram1@gmail.com",
+"password":"1234567",
+"address":"ajmer"
+}
+
+document.getElementById("aa").value=detail.name;
+
+document.getElementById("dd").value=detail.email;
+
+document.getElementById("password").value=detail.password;
+
+document.getElementById("qq").innerHTML=detail.address;
+}
+
+
+</script>
+
+
+
+</table>
+</body>
+</html>
