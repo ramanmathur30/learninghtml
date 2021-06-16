@@ -1,0 +1,30 @@
+<html>
+<body>
+<div>
+
+<p>Name:<input id="txtname" onchange="insertFunc('txtname')" /></p>
+<p>Email ID:<input id="txtemail" onchange="insertFunc('txtemail')" /></p>
+<p>Mobile:<input id="txtmobile" onchange="insertFunc('txtmobile')" /></p>
+<p><input type="submit" onclick="getList()" /></p>
+
+</div>
+<div id="showList"></div>
+<script>
+function insertFunc(txtId){
+  console.log("cc11--->>>",txtId); 
+  console.log("cc--->>>",document.getElementById(txtId).value)
+}
+
+var aryList=[];
+function getList(){
+var name= document.getElementById("txtname").value;
+var email= document.getElementById("txtemail").value;
+var mobile= document.getElementById("txtmobile").value;
+console.log("result--->>>",name,email,mobile);
+
+	aryList.push({"name":name,"email":email,"mobile":mobile});
+	console.log("aryListsd---->>>",aryList);
+}
+</script>
+</body>
+</html>
