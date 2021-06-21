@@ -8,7 +8,7 @@
 <p><input type="submit" onclick="getList()" /></p>
 
 </div>
-<div id="showList"></div>
+<div id="showList">kjdks</div>
 <script>
 function insertFunc(txtId){
   console.log("cc11--->>>",txtId); 
@@ -21,9 +21,22 @@ var name= document.getElementById("txtname").value;
 var email= document.getElementById("txtemail").value;
 var mobile= document.getElementById("txtmobile").value;
 console.log("result--->>>",name,email,mobile);
-
+//+=Concate
 	aryList.push({"name":name,"email":email,"mobile":mobile});
 	console.log("aryListsd---->>>",aryList);
+	
+	var tblData="<table>";
+	tblData=tblData+"<tr><td><b>Name</b></td><td><b>Email</b></td><td><b>Mobile No.</b></td></tr>"
+	aryList.forEach((item,index)=>{
+	 tblData=tblData+"<tr><td>"+item.name+"</td><td>"+item.email+"</td><td>"+item.mobile+"</td></tr>";
+	})
+	tblData=tblData+"</table>";
+	console.log("tttt---->>>",tblData);
+	document.getElementById("showList").innerHTML=tblData;
+	
+	document.getElementById("txtname").value="";
+	document.getElementById("txtemail").value="";
+	document.getElementById("txtmobile").value="";
 }
 </script>
 </body>
