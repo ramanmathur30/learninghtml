@@ -1,0 +1,17 @@
+<html>
+<body>
+
+<p id="sessionDetails"></p>
+<p id="sessionList"></p>
+<script>
+sessionStorage.setItem("name","Raman");
+document.getElementById("sessionDetails").innerHTML = sessionStorage.getItem("name");
+
+//[],{}=JSON Formate
+sessionStorage.setItem("list",JSON.stringify([1,2,3,4]));
+document.getElementById("sessionList").innerHTML = sessionStorage.getItem("list");
+
+
+</script>
+</body>
+</html>
