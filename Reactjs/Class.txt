@@ -1,0 +1,9 @@
+Class = A class is a blueprint that defines the variables and the methods.
+
+- When any object creat a funtion in a given environment then class is generate.
+
+Example:-
+
+- ClassRoom(Class)
+- Techer, Student, Chalk, Fan, BlackBoard, Chair, Table (Object)
+	

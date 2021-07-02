@@ -1,0 +1,9 @@
+Library or Module = It is a complete structure which perform any action.
+- It is created by combination of class & methods.
+
+
+How to use in code:-
+import {sum} 'path';
+
+var arryInt=[1,2,3,4,5];
+var sumofArray=sum(arryInt);
