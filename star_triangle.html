@@ -2,22 +2,21 @@
 <body>
 <p id="triangeView"></p>
 <script>
+
 var tblView="<table>";
-for(var i=0;i<=20;i++){
-tblView=tblView+"<tr>";
-//for(var j=((20/2)-i);j<((20/2)+i);j++){
-for(var j=0;j<20;j++){
-	if(j<((20/2)+i)){
-	console.log("i,j--->>",i,j);
-	tblView=tblView+"<td>*</td>";
+for(var i=0;i<=5;i++){
+  tblView=tblView+"<tr>";
+    for(var j=0;j<=10;j++){
+	if(j>((10/2)-i) && j<((10/2)+i)){
+	   console.log("i,j--->>",i,j);
+	   tblView=tblView+"<td>*</td>";
 	}else{
-	tblView=tblView+"<td></td>";
+	   tblView=tblView+"<td></td>";
 	}
-//}
-tblView=tblView+"</tr>";
+    }
+  tblView=tblView+"</tr>";
 }
 tblView=tblView+"</table>";
-console.log("tblView--->>",tblView);
 document.getElementById("triangeView").innerHTML=tblView;
 </script>
 </body>
