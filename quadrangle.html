@@ -1,0 +1,55 @@
+<html>
+<body>
+<p id="starview"></p>
+//<p id="starview1"></p>
+
+
+
+<script>
+	
+	var tblView="<table>";
+for(var i=0;i<=5;i++){
+		tblView=tblView+"<tr>";
+	for(var j=0;j<=10;j++){
+		if(j>((10/2)-i)&&j<((10/2)+i)){
+		console.log("i,j-->>",i,j);
+
+				
+			tblView=tblView+"<td>*</td>";
+		}else{
+			tblView=tblView+"<td></td>";
+		}
+	}
+		tblView=tblView+"</tr>";
+}
+
+for(var l=0;l<=5;l++){
+		tblView=tblView+"<tr>";
+  for(var k=0;k<=10;k++){
+		if(k>l && k<(10-l)){
+		console.log("l,k-->>",l,k);
+
+				
+				tblView=tblView+"<td>*</td>";
+		}else{
+				tblView=tblView+"<td></td>";
+		}
+
+  }
+
+		tblView=tblView+"</tr>";
+}
+tblView=tblView+"</table>";
+	
+	document.getElementById("starview").innerHTML=tblView;
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html>

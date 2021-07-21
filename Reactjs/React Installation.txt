@@ -1,0 +1,24 @@
+- nodejs install
+- If not able to install latest version of nodejs, then install nvm for your Operating System(Window/Ubantu/Linux/Android/IOS)
+- Install nvm - https://stackoverflow.com/questions/8191459/how-do-i-update-node-js
+
+Below are the full steps to use NVM for multiple version of node on windows
+
+1.download nvm-setup.zip extract and install it.
+  "https://github.com/coreybutler/nvm-windows/releases/download/1.1.7/nvm-setup.zip"
+2.execute command "nvm list available" from cmd or gitbash or powershell, this will list all available version of node 
+3.use command nvm install version e.g. "nvm install 12.14.0" to install on the machine
+4.last once installed use nvm use version to use newer version e.g. "nvm use 12.14.0"
+
+npm cache clean -f
+npm install -g 14.5.0
+
+- nvm = Node Pakage Manager
+
+Steps:-
+1.) Create a folder - Rename your project name
+2.) In your project folder- Open cmd, set path in cmd of your project folder path
+3.) Enter command in cmd:-(To create package.JSON=To install node_module or libraries)
+	 npm init -y
+	 or
+	 npm init
