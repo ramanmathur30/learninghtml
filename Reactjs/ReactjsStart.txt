@@ -1,3 +1,5 @@
+=>For Online practice - https://codesandbox.io/
+
 1.) Create a folder - Rename your project name
 2.) In your project folder- Open cmd, set path in cmd of your project folder path
 3.) Enter command in cmd:-(To create package.JSON=To install node_module or libraries)
@@ -15,4 +17,9 @@
 
 - scripts
 	- It is used to write scripts in it for START project to perform html page.
+
+- To run project, run a command "npm start"
+
+- Install packages or node_module 
+	- npm install "library name"
 	
